@@ -3,11 +3,11 @@ from Q01RemoveDuplicate import *
 
 def test_Cases():
     data = [
-        (LinkedListNode("a", LinkedListNode("b", LinkedListNode("c"))), LinkedListNode("a", LinkedListNode("b", LinkedListNode("c")))),
-        (LinkedListNode("a", LinkedListNode("a", LinkedListNode("c"))), LinkedListNode("a", LinkedListNode("c"))),
-        (LinkedListNode("a", LinkedListNode("a", LinkedListNode("a"))), LinkedListNode("a")),
-        (LinkedListNode("a", LinkedListNode("b", LinkedListNode("a"))), LinkedListNode("a", LinkedListNode("b"))),
-        (LinkedListNode("a", LinkedListNode("b", LinkedListNode("a", LinkedListNode("b")))), LinkedListNode("a", LinkedListNode("b")))        
+        (getLinkedList(["abc"]), getLinkedList("abc")),
+        (getLinkedList(["aac"]), getLinkedList("ac")),
+        (getLinkedList(["aaa"]), getLinkedList("a")),
+        (getLinkedList(["aba"]), getLinkedList("ab")),
+        (getLinkedList(["abab"]), getLinkedList("ab"))
     ]
 
     for (input, expected) in data:
@@ -16,11 +16,11 @@ def test_Cases():
 
 def test_CasesV2():
     data = [
-        (LinkedListNode("a", LinkedListNode("b", LinkedListNode("c"))), LinkedListNode("a", LinkedListNode("b", LinkedListNode("c")))),
-        (LinkedListNode("a", LinkedListNode("a", LinkedListNode("c"))), LinkedListNode("a", LinkedListNode("c"))),
-        (LinkedListNode("a", LinkedListNode("a", LinkedListNode("a"))), LinkedListNode("a")),
-        (LinkedListNode("a", LinkedListNode("b", LinkedListNode("a"))), LinkedListNode("a", LinkedListNode("b"))),
-        (LinkedListNode("a", LinkedListNode("b", LinkedListNode("a", LinkedListNode("b")))), LinkedListNode("a", LinkedListNode("b")))        
+        (getLinkedList(["abc"]), getLinkedList("abc")),
+        (getLinkedList(["aac"]), getLinkedList("ac")),
+        (getLinkedList(["aaa"]), getLinkedList("a")),
+        (getLinkedList(["aba"]), getLinkedList("ab")),
+        (getLinkedList(["abab"]), getLinkedList("ab"))
     ]
 
     for (input, expected) in data:

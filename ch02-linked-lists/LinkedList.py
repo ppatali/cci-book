@@ -3,7 +3,7 @@ class LinkedListNode:
         self.value = value
         self.next = next
         self.prev = prev
-    
+   
     def __repr__(self) -> str:
         return str(self.value)
 
@@ -27,4 +27,12 @@ class LinkedListNode:
                 break
 
         return areEuqal
-      
+
+    
+def getLinkedList(values):
+    prev = None
+    for i in range(len(values)):
+        current = LinkedListNode(values[i], None, prev)       
+        if prev != None:
+            prev.next = current        
+        prev = current
