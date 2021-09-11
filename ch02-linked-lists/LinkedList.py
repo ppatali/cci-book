@@ -21,10 +21,14 @@ class LinkedListNode:
 
         return s1 == None and s2 == None
     
-def generateLinkedList(values):
-    prev = None
+def generateLinkedList(values: str) -> LinkedListNode:
+    head = tail = None
     for i in range(len(values)):
-        current = LinkedListNode(values[i], None, prev)       
-        if prev != None:
-            prev.next = current        
-        prev = current
+        node = LinkedListNode(values[i], None, tail)       
+        if head == None:
+            head = node
+        else:
+            tail.next = node
+        tail = node
+    
+    return head
