@@ -13,23 +13,15 @@ class LinkedListNode:
         
         s1 = self
         s2 = o
-        areEuqal = True
         while (s1 != None and s2 != None):
             if (s1.value != s2.value):
-                areEuqal = False
-                break
-            
+                return False
             s1 = s1.next
             s2 = s2.next
 
-            if ((s1 == None and s2 != None) or (s1 != None and s2 == None)):
-                areEuqal = False
-                break
-
-        return areEuqal
-
+        return s1 == None and s2 == None
     
-def getLinkedList(values):
+def generateLinkedList(values):
     prev = None
     for i in range(len(values)):
         current = LinkedListNode(values[i], None, prev)       

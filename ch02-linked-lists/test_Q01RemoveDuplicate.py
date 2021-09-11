@@ -3,11 +3,11 @@ from Q01RemoveDuplicate import *
 
 def test_Cases():
     data = [
-        (getLinkedList(["abc"]), getLinkedList("abc")),
-        (getLinkedList(["aac"]), getLinkedList("ac")),
-        (getLinkedList(["aaa"]), getLinkedList("a")),
-        (getLinkedList(["aba"]), getLinkedList("ab")),
-        (getLinkedList(["abab"]), getLinkedList("ab"))
+        (generateLinkedList(["abc"]), generateLinkedList("abc")),
+        (generateLinkedList(["aac"]), generateLinkedList("ac")),
+        (generateLinkedList(["aaa"]), generateLinkedList("a")),
+        (generateLinkedList(["aba"]), generateLinkedList("ab")),
+        (generateLinkedList(["abab"]), generateLinkedList("ab"))
     ]
 
     for (input, expected) in data:
@@ -16,11 +16,11 @@ def test_Cases():
 
 def test_CasesV2():
     data = [
-        (getLinkedList(["abc"]), getLinkedList("abc")),
-        (getLinkedList(["aac"]), getLinkedList("ac")),
-        (getLinkedList(["aaa"]), getLinkedList("a")),
-        (getLinkedList(["aba"]), getLinkedList("ab")),
-        (getLinkedList(["abab"]), getLinkedList("ab"))
+        (generateLinkedList(["abc"]), generateLinkedList("abc")),
+        (generateLinkedList(["aac"]), generateLinkedList("ac")),
+        (generateLinkedList(["aaa"]), generateLinkedList("a")),
+        (generateLinkedList(["aba"]), generateLinkedList("ab")),
+        (generateLinkedList(["abab"]), generateLinkedList("ab"))
     ]
 
     for (input, expected) in data:
