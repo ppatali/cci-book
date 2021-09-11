@@ -1,5 +1,5 @@
 from LinkedList import *
-from Q09LoopDetection import *
+from Q08LoopDetection import *
 
 def test_Cases():
     head = generateLinkedList("ABCDE")

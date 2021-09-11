@@ -1,5 +1,5 @@
 from LinkedList import *
-from Q08Intersection import *
+from Q07Intersection import *
 
 def test_Cases():
     head1 = generateLinkedList([3,1,5,9,7,2,1])
